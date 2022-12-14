@@ -6,7 +6,8 @@
 
 :root{
 	--index: calc(1vw+1vh);
-	--transition: 0.5s cubic-bezier(0.000, 0.395, 1.000, 0.610);
+	--transition: 0.4s cubic-bezier(0.2, 0.395, 1.000, 0.610);
+	--hover-transition: 0.1s cubic-bezier(0.000, 0.395, 1.000, 0.610);
 }
 
 html, body{
@@ -38,11 +39,11 @@ html, body{
 	margin-bottom: calc(var(--index) * 3);
 	cursor: pointer;
 	will-change: transform;
-	transition: transform var(--transition);
+	transition: transform var(--hover-transition);
 	box-shadow:rgb(0,0,0,0.15) 0 0 15px 10px
 }
 .slider__item:hover{
-	transform: scale(1.05);
+	transform: scale(1.03);
 	
 }
 .slider__img{
